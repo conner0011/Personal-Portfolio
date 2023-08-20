@@ -87,7 +87,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-.about-cal-1{
+.about-col-1{
     flex-basis: 35%;
 }
 .about-col-1 img{

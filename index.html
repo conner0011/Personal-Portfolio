@@ -1,135 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conner Green - Portfolio</title>
-    <link rel="stylesheet" href="stlye.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Conner Green - Software Developer Portfolio</title>
+    
+    <!-- SEO and Social Media Meta Tags -->
+    <meta name="description" content="Conner Green - Aspiring Software Developer passionate about creating innovative solutions through technology">
+    <meta property="og:title" content="Conner Green - Portfolio">
+    <meta property="og:description" content="Portfolio of Conner Green, showcasing software development projects and skills">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>Aspiring Software Developer</p>
-                    <h1>Aiming to <span>improve</span> the <span>world</span><br>through <span>software
-                            development.</span></h1>
-                </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Conner Green Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Software Developer</p>
+                <h1>Aiming to <span>improve</span> the <span>world</span><br>through <span>software development</span>.</h1>
             </div>
         </div>
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/user.png">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>Hello I'm Conner Green! I'm a 17-year-old high-school senior with a passion for software
-                            development and the endless possibilities it holds. Ever since I wrote my first line of
-                            code, I was hooked by the magic of transforming ideas into tangible applications. I'm on a
-                            journey to deepen my knowledge and skills, aiming to major in Computer Science in college.
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Problem Solving</span><br>Efficent at breaking down a complex issue into
-                                    smaller, manageable parts, and devise solutions.</li>
-                                <li><span>Attention to Detail</span><br>Small mistakes can lead to significant issues in
-                                    software. Being meticulous and detail-oriented ensures that errors are minimized.
-                                </li>
-                                <li><span>Soft Skills</span><br>Communication, teamwork, empathy, adaptability, and time
-                                    management are essential for collaborating effectively in a development team and
-                                    understanding user needs.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>May 9th, 2021 - Current</span><br>Served as the lead developer for a Discord
-                                    bot designed to enable voice channel users to democratically remove participants.
-                                    This innovative solution achieved adoption by over a million active users,
-                                    highlighting its scalability and user appeal. <br> The image below is my mentor
-                                    that helped me work on the project and endorsing me for the Texas A&M Computer
-                                    Science Program.</li>
-                                <div class="about-col-1-experience-sub">
-                                    <img src="images/recommendation.jpg" class="recommendation">
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2020 - Current</span><br>Cypress Falls High School.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/work-1.png">
-                        <div class="layer">
-                            <h3>Votekick Discord Bot</h3>
-                            <p>A Discord Bot designed to enable voice channel users to democratically remove participants. Still active with over a million users, highly customizable, connected with MongoDB storing thousands of configurations and metric data.</p>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-2.png">
-                        <div class="layer">
-                            <h3>Repear Scans Webiste to Community bot</h3>
-                            <p>Developed a Discord bot that leverages web scraping techniques to monitor the Reaper Scans website for new comic releases, intelligently identifies subscribers of specific comic series, and dispatches targeted notifications upon new content availability.</p>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-3.png">
-                        <div class="layer">
-                            <h3>Among Us Discord Bot</h3>
-                            <p>Designed a pioneering Discord bot tailored for the premier Among Us-affiliated server, introducing a rich suite of unique, advanced features. The bot's unmatched complexity and originality ensured it remained unparalleled in the community.</p>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-4.png">
-                        <div class="layer">
-                            <h3>Drop Engine</h3>
-                            <p>In response to Nvidia's high-demand graphics card release, I architected 'Drop Engine,' a sophisticated application leveraging real-time monitoring and predictive algorithms. By analyzing market trends and combating scalper interventions, this tool autonomously detected inventory restocks and executed immediate purchase protocols, demonstrating both innovation and strategic foresight for personal asset acquisition.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents")
-            function opentab(tabname) {
-                for (tablink of tablinks) {
-                    tablink.classList.remove("active-link")
-                }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab")
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab")
-            }
-        </script>
-    </body>
+    </div>
 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="Conner Green Portrait" loading="lazy">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Conner Green! I'm a 17-year-old high school senior with a passion for software development and the endless possibilities it holds. Ever since I wrote my first line of code, I was captivated by the magic of transforming ideas into tangible applications. I'm on a journey to deepen my knowledge and skills, aiming to major in Computer Science in college.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>
+                                Python, JavaScript, Discord Bot Development, Web Scraping, MongoDB, Git
+                            </li>
+                            <li><span>Problem Solving</span><br>
+                                Efficient at breaking down complex issues into manageable parts and devising innovative solutions.
+                            </li>
+                            <li><span>Soft Skills</span><br>
+                                Strong communication, collaborative teamwork, adaptability, and strategic time management.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>May 9th, 2021 - Current</span><br>
+                                Lead Developer - Discord Bot Project
+                                <ul>
+                                    <li>Developed a Discord bot with democratic user removal functionality</li>
+                                    <li>Achieved over 1 million active users</li>
+                                    <li>Implemented advanced features using MongoDB for configuration management</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="about-col-1-experience-sub">
+                            <img src="images/recommendation.jpg" alt="Recommendation from Mentor" class="recommendation" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>Cypress Falls High School</li>
+                            <li><span>Planned</span><br>Computer Science Major (College)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Votekick Discord Bot" loading="lazy">
+                    <div class="layer">
+                        <h3>Votekick Discord Bot</h3>
+                        <p>A Discord Bot enabling democratic participant removal. Active with over a million users, highly customizable, and connected with MongoDB for storing configurations and metrics.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Reaper Scans Website Community Bot" loading="lazy">
+                    <div class="layer">
+                        <h3>Reaper Scans Website Community Bot</h3>
+                        <p>Discord bot using web scraping to monitor comic releases, intelligently identifying and notifying subscribers about new content.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Among Us Discord Bot" loading="lazy">
+                    <div class="layer">
+                        <h3>Among Us Discord Bot</h3>
+                        <p>Innovative Discord bot for the premier Among Us server, featuring unique and advanced functionalities that set it apart in the community.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png" alt="Drop Engine" loading="lazy">
+                    <div class="layer">
+                        <h3>Drop Engine</h3>
+                        <p>Sophisticated application for monitoring GPU inventory, using real-time monitoring and predictive algorithms to detect and execute immediate purchase protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> conner.green@example.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/connergreen" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/connergreen" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

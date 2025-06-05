@@ -34,7 +34,7 @@ function closeMenu() {
 }
 
 // Optional: Form submission handler (note: would need backend implementation)
-document.addEventListener('DOMContentLoaded', function() {
+function initContactForm() {
     const form = document.querySelector('form');
     if (form) {
         form.addEventListener('submit', function(e) {
@@ -43,4 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // In a real-world scenario, you'd send this data to a backend service
         });
     }
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initContactForm);
+} else {
+    initContactForm();
+}
